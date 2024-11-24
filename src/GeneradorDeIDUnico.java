@@ -26,20 +26,20 @@ public class GeneradorDeIDUnico {
         
         System.out.println("Cual es tu nombre?");
         var nombre = consola.nextLine();
-        var primeroCaracteresNombre = nombre.substring(0,2).toUpperCase();
+        var primeroCaracteresNombre = nombre.trim().substring(0,2).toUpperCase();
         System.out.println("Cual es tu apellido?");
         var apellido = consola.nextLine();
-        var primeroCaracteresApellido = apellido.substring(0,2).toUpperCase();
+        var primeroCaracteresApellido = apellido.trim().substring(0,2).toUpperCase();
         System.out.println("Cual es tu año de nacimiento?");
         var año = consola.nextLine();
         var añoPartido = año.substring(2,4);
-        System.out.println("nombre = " + nombre);
-        System.out.println("apellido = " + apellido);
-        System.out.println("año = " + año);
-        System.out.println("primeroCaracteresNombre = " + primeroCaracteresNombre);
-        System.out.println("primeroCaracteresApellido = " + primeroCaracteresApellido);
-        System.out.println("añoPartido = " + añoPartido);
-        System.out.println("numeroDepurado = " + numeroGenerado);
+        //System.out.println("nombre = " + nombre);
+        //System.out.println("apellido = " + apellido);
+        //System.out.println("año = " + año);
+        //System.out.println("primeroCaracteresNombre = " + primeroCaracteresNombre);
+        //System.out.println("primeroCaracteresApellido = " + primeroCaracteresApellido);
+        //System.out.println("añoPartido = " + añoPartido);
+        //System.out.println("numeroDepurado = " + numeroGenerado);
         var IdGenerado = (primeroCaracteresNombre+primeroCaracteresApellido+añoPartido+numeroDepurado);
         System.out.println("Felicidades, el IdGenerado es = " + IdGenerado);
     }
